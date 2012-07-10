@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+Options +Indexes
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#ErrorDocument 400 /app/errors/400.cfm
+#ErrorDocument 401 /app/errors/401.cfm
+#ErrorDocument 403 /app/errors/403.cfm
+#ErrorDocument 404 /app/errors/404.cfm
+#ErrorDocument 500 /app/errors/500.cfm
